@@ -817,7 +817,7 @@ main #section7 #bottom button {
   }
   main #section7 #top p {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     padding-top: 2rem;
     padding-left: 3.2rem;
@@ -836,6 +836,7 @@ main #section7 #bottom button {
     color: black;
     font-size: 4.5rem;
     padding-left: 3rem;
+    padding-right: 13rem;
     flex: 1;
   }
   main #section7 #bottom button {
