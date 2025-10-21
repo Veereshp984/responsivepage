@@ -545,7 +545,12 @@ main #section8 aside #bottom i {
   border-radius: 2rem;
   margin-right: 0.5rem;
 }
-main #section8 #subsection {
+main #section8 #side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main #section8 #side #subsection {
   width: 92%;
   display: flex;
   justify-content: space-evenly;
@@ -559,24 +564,24 @@ main #section8 #subsection {
   margin-top: 0;
   border-radius: 1.2rem;
 }
-main #section8 #subsection #subsec1 {
+main #section8 #side #subsection #subsec1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
 }
-main #section8 #subsection #subsec1 h4 {
+main #section8 #side #subsection #subsec1 h4 {
   font-size: 1.5rem;
   color: white;
   font-weight: 200;
   letter-spacing: 2px;
 }
-main #section8 #subsection #subsec1 p {
+main #section8 #side #subsection #subsec1 p {
   color: #7D7C7A;
   font-size: 1rem;
 }
-main #section8 #subsection #subsec1 button {
+main #section8 #side #subsection #subsec1 button {
   width: 50%;
   padding: 0.5rem;
   background-color: #AD9D49;
@@ -584,24 +589,24 @@ main #section8 #subsection #subsec1 button {
   border-radius: 0.5rem;
   color: black;
 }
-main #section8 #subsection #subsec2 {
+main #section8 #side #subsection #subsec2 {
   width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main #section8 #subsection #subsec2 h4 {
+main #section8 #side #subsection #subsec2 h4 {
   font-size: 1.5rem;
   color: white;
   font-weight: 200;
   letter-spacing: 2px;
 }
-main #section8 #subsection #subsec2 p {
+main #section8 #side #subsection #subsec2 p {
   color: #7D7C7A;
   font-size: 1rem;
 }
-main #section8 #subsection #subsec3 {
+main #section8 #side #subsection #subsec3 {
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -609,17 +614,17 @@ main #section8 #subsection #subsec3 {
   gap: 1rem;
   padding-bottom: 1rem;
 }
-main #section8 #subsection #subsec3 h4 {
+main #section8 #side #subsection #subsec3 h4 {
   font-size: 1.5rem;
   color: white;
   font-weight: 200;
   letter-spacing: 2px;
 }
-main #section8 #subsection #subsec3 p {
+main #section8 #side #subsection #subsec3 p {
   color: #7D7C7A;
   font-size: 1rem;
 }
-main #section8 footer {
+main #section8 #side footer {
   width: 92%;
   display: flex;
   justify-content: space-evenly;
@@ -631,19 +636,19 @@ main #section8 footer {
   border-radius: 1.2rem;
   margin-bottom: 1rem;
 }
-main #section8 footer #top {
+main #section8 #side footer #top {
   width: 100%;
   padding: 2rem;
 }
-main #section8 footer #top p {
+main #section8 #side footer #top p {
   color: #7D7C7A;
   font-size: 1rem;
   text-align: center;
 }
-main #section8 footer #top p a {
+main #section8 #side footer #top p a {
   color: white;
 }
-main #section8 footer #bottom {
+main #section8 #side footer #bottom {
   width: 100%;
   padding-bottom: 2.2rem;
   display: flex;
@@ -652,11 +657,11 @@ main #section8 footer #bottom {
   justify-content: center;
   align-items: center;
 }
-main #section8 footer #bottom p {
+main #section8 #side footer #bottom p {
   color: white;
   font-size: 1.2rem;
 }
-main #section8 footer #bottom i {
+main #section8 #side footer #bottom i {
   color: white;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -677,6 +682,12 @@ main #section8 footer #bottom i {
     width: 100%;
     background-color: #121212;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    overflow-x: hidden;
+  }
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
   main {
     width: 100%;
@@ -1015,41 +1026,53 @@ main #section8 footer #bottom i {
     margin-left: 0.5rem;
   }
   main #section8 {
-    width: 100%;
+    width: 100vw;
     display: grid;
-    grid-template-rows: repeat(3, 200px);
-    grid-template-columns: repeat(10, 10%);
+    grid-template-columns: 30% 70%;
     gap: 1rem;
-    margin-right: 1rem;
-    padding-left: 1.2rem;
+    box-sizing: border-box;
+    padding-left: 0;
   }
   main #section8 aside {
     width: 100%;
-    grid-row-start: span 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
   }
-  main #section8 #subsection {
+  main #section8 aside #top {
+    width: 100%;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+  }
+  main #section8 #side {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+  }
+  main #section8 #side #subsection {
     width: 100%;
     display: flex;
     flex-direction: row;
-    grid-row-start: span 2;
-    grid-column-start: span 7;
     margin-top: 1rem;
     gap: 1rem;
   }
-  main #section8 #subsection #subsec1, main #section8 #subsection #subsec2, main #section8 #subsection #subsec3 {
+  main #section8 #side #subsection #subsec1, main #section8 #side #subsection #subsec2, main #section8 #side #subsection #subsec3 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2.5rem;
     padding: 2rem;
   }
-  main #section8 footer {
+  main #section8 #side footer {
     width: 100%;
-    grid-column-start: 3;
-    grid-column-end: 10;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15rem;
+  }
+  main #section8 #side footer #bottom {
+    width: 100%;
+    padding-top: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
