@@ -966,7 +966,8 @@ body::-webkit-scrollbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 1rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
 
         #left{
             width: 100%;
@@ -990,23 +991,53 @@ body::-webkit-scrollbar {
 
 
 
-            button{
+            .even{
                 background-color: #1E1E1E;
                 color: white;
+                display: block;
+                width: 100%;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                font-weight: 400;
                 border: none;
                 border-radius: 0.5rem;
-                padding: 0rem 1rem;
-               font-size: 1rem;
-
-               
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                 white-space: nowrap;
+                 font-size: 1rem;
             }
+            .not-even{
+                  width: 100%;
+                   background-color: #1E1E1E;
+                color: white;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                font-weight: 400;
+                border: none;
+                border-radius: 0.5rem;
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                 white-space: nowrap;
+                 font-size: 1rem;
+            }
+
             #odd{
+                display: block;
                 background-color: #AD9D49;
                 color: black;
                 width: 100%;
                 padding-right: 1.5rem;
                 padding-left: 1.5rem;
-                font-weight: 300;
+                font-weight: 400;
+                border: none;
+                border-radius: 0.8rem;
+                padding-top: 0.8rem;
+                padding-bottom: 0.5rem;
+                 white-space: nowrap;
+                 font-size: 1rem;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
             }
             .ri-menu-line{
                 display: none;
@@ -1018,6 +1049,7 @@ body::-webkit-scrollbar {
             display: flex;
             justify-content: center;
             flex-direction: row;
+            margin-bottom: 0rem;
         
             #top{
                 width: 100%;
@@ -1060,7 +1092,7 @@ body::-webkit-scrollbar {
                  text-transform: uppercase;
                  padding-bottom: 0;
                  line-height: 6rem;
-                //  padding-top: 12rem;
+                
                 }
             
                 #para{
