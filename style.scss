@@ -16,6 +16,170 @@ main{
     flex-direction: column;
     justify-content: center;
 
+//     nav{
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+
+
+//         #left{
+//             width: 100%;
+//             padding: 1rem;
+//             justify-content: space-between;
+
+//             p{
+//                 color: white;
+//                 padding-left: 1rem;
+                
+//                 font-size: 1.2rem;
+//                 letter-spacing: 3px;
+//             }
+//         }
+
+//         #right{
+//             display: flex;
+//             flex-direction: row;
+//             gap: 1rem;
+//             justify-content: space-between;
+
+//             .even{
+//                 display: none;
+//             }
+
+//             #odd{
+//                 display: none;
+//             }
+
+//             .not-even{
+//                 // background-color: #1E1E1E;
+//                 // color: white;
+//                 // padding: 0.5rem 1rem;
+//                 // border: none;
+//                 // border-radius: 0.5rem;
+
+
+
+//                 display: inline-flex;
+//   align-items: center;
+//   gap: 0.5rem;
+//   background-color: #1E1E1E;
+//   color: white;
+//  padding: 0.3rem 0.6rem;
+//   border: none;
+//   border-radius: 0.5rem;
+//   font-size: 1rem;
+//   cursor: pointer;
+//   box-sizing: border-box;
+
+// line-height: 1;
+
+
+
+
+
+//             }
+
+// .badge{
+//     background-color: #FFD700; // yellow
+//   color: black;
+//   font-size: 0.75rem;
+//   font-weight: bold;
+//   border-radius: 50%;
+//   padding: 0.3rem 0.6rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-width: 1.2rem;
+//   height: 1.2rem;
+
+// }
+//             .ri-menu-line{
+//                 display: block;
+//                 color: white;
+//                 padding: 1rem;
+//                 padding-right: 1.5rem;
+//                 font-size: 2.5rem;
+//             }
+//         }
+//     }
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    #left {
+        padding-left: 2rem;
+
+        p {
+            color: white;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+
+    #right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+
+        .even {
+            display: none;
+        }
+
+        #odd {
+            display: none;
+        }
+
+        .not-even {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #1E1E1E;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .badge {
+            background-color: #FFD700;
+            color: black;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .ri-menu-line {
+            display: block;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+
+
     #section1{
         width: 100%;
         display: flex;
@@ -796,7 +960,59 @@ body::-webkit-scrollbar {
     main{
         width: 100%;
         display: flex;
-        
+      
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1rem;
+
+        #left{
+            width: 100%;
+            padding: 1rem;
+
+            p{
+                color: white;
+                padding-left: 1rem;
+                
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+            }
+        }
+
+        #right{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-right: 1rem;
+
+
+
+            button{
+                background-color: #1E1E1E;
+                color: white;
+                border: none;
+                border-radius: 0.5rem;
+                padding: 0rem 1rem;
+               font-size: 1rem;
+
+               
+            }
+            #odd{
+                background-color: #AD9D49;
+                color: black;
+                width: 100%;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                font-weight: 300;
+            }
+            .ri-menu-line{
+                display: none;
+            }
+        }
+    }
         #section1{
             width: 100%;
             display: flex;

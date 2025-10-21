@@ -18,6 +18,72 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+main nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+main nav #left {
+  padding-left: 2rem;
+}
+main nav #left p {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 600;
+}
+main nav #right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+}
+main nav #right .even {
+  display: none;
+}
+main nav #right #odd {
+  display: none;
+}
+main nav #right .not-even {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1E1E1E;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+main nav #right .badge {
+  background-color: #FFD700;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+main nav #right .ri-menu-line {
+  display: block;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
 main #section1 {
   width: 100%;
   display: flex;
@@ -692,6 +758,49 @@ main #section8 #side footer #bottom i {
   main {
     width: 100%;
     display: flex;
+  }
+  main nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  main nav #left {
+    width: 100%;
+    padding: 1rem;
+  }
+  main nav #left p {
+    color: white;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  main nav #right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+  main nav #right button {
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+  }
+  main nav #right #odd {
+    background-color: #AD9D49;
+    color: black;
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 300;
+  }
+  main nav #right .ri-menu-line {
+    display: none;
   }
   main #section1 {
     width: 100%;
