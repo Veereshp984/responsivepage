@@ -109,14 +109,17 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem ;
+    padding-top: 1.5rem;
 
     #left {
         padding-left: 2rem;
+        padding-right: 0rem;
+        padding-bottom: 0rem;
 
         p {
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.7rem;
             letter-spacing: 3px;
             margin: 0;
             font-weight: 600;
@@ -128,8 +131,9 @@ nav {
         flex-direction: row;
         align-items: center;
         gap: 1rem;
-        padding-right: 2rem;
-        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
 
         .even {
             display: none;
@@ -148,10 +152,12 @@ nav {
             padding: 0.5rem 1rem;
             border: none;
             border-radius: 0.5rem;
-            font-size: 0.9rem;
+            font-size: 1rem;
             cursor: pointer;
             font-weight: 500;
             letter-spacing: 0.5px;
+            padding-top: 0.9rem;
+            padding-bottom: 0.9rem;
         }
 
         .badge {
@@ -171,7 +177,7 @@ nav {
         .ri-menu-line {
             display: block;
             color: white;
-            font-size: 2rem;
+            font-size: 2.5rem;
             cursor: pointer;
             margin-left: 0.5rem;
         }
@@ -185,6 +191,7 @@ nav {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 0rem;
         
 
         #top{
